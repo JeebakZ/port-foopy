@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Hugo 0.90.1" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', '');
+    </script>
+
+
+    <title>Jeebak&#39;s Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+        .rad-fade-in {
+            will-change: opacity, transform;
+            animation-name: rad-fade-in-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-fallback {
+            0% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fonts-loaded .rad-fade-in.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+        }
+
+        .fonts-loaded .rad-fade-in.rad-animate {
+            animation-name: rad-fade-in;
+            animation-duration: 1.1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .rad-fade-in-long {
+            will-change: opacity, transform;
+            animation-name: rad-fade-in-long-fallback;
+            animation-duration: 8s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-long-fallback {
+            0% {
+                opacity: 0;
+            }
+            75% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fonts-loaded .rad-fade-in-long.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+        }
+
+        .fonts-loaded .rad-fade-in-long.rad-animate {
+            animation-name: rad-fade-in-long;
+            animation-duration: 2s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-fade-in-long {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .rad-fade-down {
+            will-change: opacity, transform;
+            animation-name: rad-fade-down-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            transform: translateY(-30px);
+        }
+
+        @keyframes rad-fade-down-fallback {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            75% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fonts-loaded .rad-fade-down.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        .fonts-loaded .rad-fade-down.rad-animate {
+            animation-name: rad-fade-down;
+            animation-duration: 1.1s;
+        }
+
+        @keyframes rad-fade-down {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rad-scale-down {
+            will-change: opacity, transform;
+            animation-name: rad-scale-down-fallback;
+            animation-duration: 5s;
+            animation-fill-mode: both;
+            transform-origin: 50% 0;
+        }
+
+        @keyframes rad-scale-down-fallback {
+            0% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+            75% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
+        .fonts-loaded .rad-scale-down.rad-waiting {
+            animation-name: none;
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        .fonts-loaded .rad-scale-down.rad-animate {
+            animation-name: rad-scale-down;
+            animation-duration: 1.1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes rad-scale-down {
+            0% {
+                opacity: 0;
+                transform: scaleY(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
+        .blog-post__image-container {
+            position: relative;
+        }
+
+        .blog-post__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .blog-post:hover .blog-post__overlay {
+            opacity: 1;
+        }
+
+        .blog-post__action {
+            color: white;
+            margin: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .blog-post__action:hover {
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 5px;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="https://mattdancho.netlify.app/css/main.css" />
+
+    <link rel="stylesheet" href="https://mattdancho.netlify.app/css/rad-icons.css" />
+
+    <link rel="stylesheet" href="https://mattdancho.netlify.app/css/custom.css" />
+
+
+
+
+
+</head>
+
+<body>
+
+    <header class="header fixed-top rad-animation-group" id="header">
+        <div class="container rad-fade-in">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="######">
+        <span>Jee</span>
+        <span>Bak</span>
+        
+      </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #header" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://jeebakz.github.io/port/#home">HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link" href="#about-foo">Foo-pY</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#foo-py"
+              >HOW-to-USE</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#benefits"
+              >BENEFITS</a
+            >
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#mission"
+              >MISSION</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact"
+              >CONTACT</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section id="about-foo" class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="Untitled design.gif"
+      data-src="Untitled design.gif"
+      data-srcset="Untitled design.gif 1x, Untitled design.gif 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+            
+          <h1 class="display-1">
+            <img src="picfoopy.jpg" alt="Foo-pY Logo" style="width: 250px; height: 100px; vertical-align: middle;" />
+           
+           
+            <br />
+            <span>Football Analysis Web-app</span>
+          </h1>
+<p class="lead">
+    This web application helps football analysts and coaches gain deep insights into match performance and player dynamics by visualizing passing networks, player passes, and heatmaps. Using data from matches such as the Turkey vs Portugal Euro 2024 game, Foo-py provides actionable insights to elevate your game analysis. Here’s how you can get started and maximize the benefits of Foo-py.
+</p>
+<p class="'lead_1">
+    Harnessing the power of Streamlit, Foo-py sets a new standard in football analysis by offering dynamic visualizations of match data. Tailored for analysts and coaches, Foo-py transforms complex match events into clear insights.
+    </p>
+<a href="https://foo-py.streamlit.app/" class="btn btn-primary">
+    <i class="bi bi-envelope"></i> Launch Application
+    <img src="streamlit-mark-light.png" alt="Logo" style="width: 20px; height: 20px; margin-left: 10px;">
+</a>
+
+        </div>
+        <div class="rad-showcase__bg rad-showcase__bg--mobile">
+            <img class="lozad img-responsive" src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs=" data-src="Untitled design.gif" alt="" />
+        </div>
+        </section>
+
+
+
+
+                        
+        <div class="container">
+            <h2>Introducing Foo-py: Revolutionizing Football Analysis</h2>
+            <p class="lead">
+                Welcome to <strong>Foo-py!</strong>
+            </p>
+            <p class="lead">
+                <strong>Foo-py</strong> helps football analysts and coaches gain deep insights into match performance and player dynamics by visualizing passing networks, player passes, and heatmaps.
+            </p>
+            
+            <img src="Foo-pY (1).png" alt="Foo-py Visualization Example" style="max-width: 100%; height: auto;">
+            <p class="lead">
+                Using data from matches such as the Turkey vs Portugal Euro 2024 game, Foo-py provides actionable insights to elevate your game analysis. Here’s how you can get started and maximize the benefits of Foo-py.
+            </p>
+        </div>
+        
+        </section>
+        
+
+
+
+
+
+
+
+    <section class="content-section" id="foo-py">
+        <div class="container">
+        
+
+            <h3>How to Use Foo-py</h3>
+            <h5>Step 1: Upload Your Data</h5>
+            <p>Prepare Your Data: Ensure you have clean match events data in an Excel file. This data should include details such as teams, players, passes, outcomes, and coordinates.<br>
+            Upload File: On the Foo-py sidebar, click on the "Upload an Excel file" button and select your file. Foo-py will load the data for processing.</p>
+            <div style="text-align: center;">
+                <img src="step1.gif" alt="Upload Data" style="max-width: 80%; height: 80%">
+            </div>
+            <p>     </p>
+
+            <span>Sample Data File Structure</span>
+            <p>To get the most out of Foo-py, ensure your data file follows a similar structure:</p>
+            <style>
+                .match-table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    border: 1px solid #ccc;
+                    overflow-y: auto;
+                    max-height: 200px;
+                }
+                .match-table th, .match-table td {
+                    border: 1px solid #ccc;
+                    padding: 8px;
+                    text-align: center;
+                }
+                .match-table th {
+                    background-color: #f2f2f2;
+                }
+                .match-table tbody tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+                .match-table tbody tr:hover {
+                    background-color: #e0e0e0;
+                }
+            </style>
+            
+            <div style="overflow-y: auto; max-height: 200px;">
+                <table class="match-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>EndX</th>
+                            <th>EndY</th>
+                            <th>Team ID</th>
+                            <th>Team</th>
+                            <th>Player ID</th>
+                            <th>Passer</th>
+                            <th>Pass Jersey</th>
+                            <th>Receiver</th>
+                            <th>Rec Jersey</th>
+                            <th>Type</th>
+                            <th>Outcome Type</th>
+                            <th>Minute</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>32.2</td>
+                            <td>59.8</td>
+                            <td>340</td>
+                            <td>Portugal</td>
+                            <td>123761</td>
+                            <td>Bruno Fernandes</td>
+                            <td>8</td>
+                            <td>Nuno Mendes</td>
+                            <td>19</td>
+                            <td>Pass</td>
+                            <td>Successful</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>34.1</td>
+                            <td>53.5</td>
+                            <td>96.2</td>
+                            <td>33.3</td>
+                            <td>340</td>
+                            <td>Portugal</td>
+                            <td>395221</td>
+                            <td>Nuno Mendes</td>
+                            <td>19</td>
+                            <td>Altay Bayındır</td>
+                            <td>12</td>
+                            <td>Pass</td>
+                            <td>Unsuccessful</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>15</td>
+                            <td>45.5</td>
+                            <td>20.2</td>
+                            <td>24.1</td>
+                            <td>333</td>
+                            <td>Turkey</td>
+                            <td>361707</td>
+                            <td>Altay Bayındır</td>
+                            <td>12</td>
+                            <td>Samet Akaydın</td>
+                            <td>4</td>
+                            <td>Pass</td>
+                            <td>Successful</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>31.2</td>
+                            <td>25.9</td>
+                            <td>100</td>
+                            <td>20.4</td>
+                            <td>333</td>
+                            <td>Turkey</td>
+                            <td>422941</td>
+                            <td>Samet Akaydın</td>
+                            <td>4</td>
+                            <td>Pepe</td>
+                            <td>3</td>
+                            <td>Pass</td>
+                            <td>Unsuccessful</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>4.6</td>
+                            <td>61.5</td>
+                            <td>4.2</td>
+                            <td>29.7</td>
+                            <td>340</td>
+                            <td>Portugal</td>
+                            <td>10105</td>
+                            <td>Pepe</td>
+                            <td>3</td>
+                            <td>Rúben Dias</td>
+                            <td>4</td>
+                            <td>Pass</td>
+                            <td>Successful</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>     </p>
+
+            <h4>Step 2: Select Your Team</h4>
+            <p>•Choose Team: In the sidebar, select the team you want to analyze from the dropdown menu.<br>
+                •Set Time Range: Use the slider to choose the time range (in minutes) you want to analyze.</p>
+            <div style="text-align: center;">
+            <img src="step2.png" alt="Select Team" style="max-width: 80%; height: 80%">
+            </div>
+            <p>     </p>
+
+            <h4>Step 3: Choose Players and Outcomes</h4>
+            <p>Select Players: You can either select individual players from the dropdown menu or check "Select All Players" to include everyone from the team.<br>
+            Select Outcome Type: Choose the type of pass outcome you want to focus on: "All," "Successful," or "Unsuccessful."</p>
+            
+
+            <h4>Step 4: Explore the Tabs</h4>
+            <p>Foo-py provides three main visualization tabs:</p>
+            <ul>
+                <li><strong>Pass Map Network</strong>: Visualizes the passing network between players.</li>
+                <li><strong>Passes</strong>: Displays individual player passes, color-coded by success (green) or failure (red).</li>
+                <li><strong>Heatmap</strong>: Offers heatmaps to visualize pass densities.</li>
+            </ul>
+            <img src="step4.png" alt="Tabs Overview" style="max-width: 80%; height: 80%">
+
+
+            <section id="benefits">
+            <h3>Benefits of Using Foo-py</h3>
+            <p><strong>🧑‍💻📊For Analysts</strong><br>
+            » Detailed Insights: Gain a deeper understanding of team dynamics and individual player performance.<br>
+            » Data-Driven Decisions: Use visual data to support tactical decisions and strategies.<br>
+            » Performance Tracking: Monitor and track performance improvements over time with consistent analysis.</p>
+            <p><strong>🥅⚽For Coaches</strong><br>
+                » Strategic Planning: Visualize how players interact on the field to plan training sessions and match strategies.<br>
+                » Player Development: Identify strengths and areas for improvement for each player.<br>
+                » Game Preparation: Analyze opponent data to prepare for upcoming matches with informed strategies.</p>
+
+            </section>
+
+            <section id="mission">
+            <h3>My Mission with Foo-py</h3>
+            <p>My journey with Foo-py is just beginning. I aim to make this web app more insightful and user-friendly, bringing advanced data analysis to the beautiful game of football. By continuously improving Foo-py, I hope to provide coaches, analysts, and fans with deeper, data-driven insights into the sport we all love.<br>
+                Stay tuned as Foo-py evolves to unlock even more potential in football analysis!<br>
+            </p>
+        </section>
+            <p>     </p>
+
+            <h3>Contact and Feedback</h3>
+            <p>We value your feedback! If you have any questions, suggestions, or need further assistance, please reach out.</p>
+            <p>     </p>
+        
+
+            
+            
+            <section id="contact" class="section section--contact pt-0">
+                <div class="container">
+                    <div class="contact">
+                        <h2>Get in touch with Jeebak</h2>
+                        <div class="row pt-2">
+                            <img class="lozad img-responsive image-left-overflow" src="jz99.jpg"
+                                alt="Profile Picture" style="width: 30%; height: auto;" />
+            
+                            <div class="col-12 col-lg-5 contact__info">
+                                <h4>Phone Number</h4>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+            
+                                <h4>Email</h4>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+                            
+                                <h4>Queries</h4>
+                                <textarea id="queries" name="queries" placeholder="Enter your queries"></textarea>
+            
+                                <br /><br />
+                                <button class="btn btn-primary" onclick="sendMessage()">
+                                    <i class="icon-ml-fill">
+
+                                    </i>
+                                    Send Message
+                                    <img src="—Pngtree—white message icon_4631512.png" alt="Logo" style="width: 10px; height:10x; margin-left: 50px;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <script>
+                function sendMessage() {
+                   
+                    var phoneNumber = document.getElementById("phoneNumber").value;
+                    var email = document.getElementById("email").value;
+                    var address = document.getElementById("address").value;
+                    var queries = document.getElementById("queries").value;
+            
+                   
+                    console.log("Phone Number: " + phoneNumber);
+                    console.log("Email: " + email);
+                    console.log("Address: " + address);
+                    console.log("Queries: " + queries);
+            
+                    
+                }
+            </script>
+            
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__left">
+                <div class="footer__copy">
+                    © Jeebak. All rights reserved. 2024
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link" href="#about">ABOUT</a
+        >
+
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link" href="#portfolio"
+                          >PORTFOLIO</a
+                        >
+                      </li>
+
+                      <li class="nav-item">
+                        <a data-scroll class="nav-link" href="#contact"
+                          >CONTACT</a
+                        >
+                      </li>
+
+                </ul>
+            </div>
+
+            <div class="footer__right">
+                <div class="footer__copy">
+                    Site built by Jz with
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <img src="image-removebg-preview (2).png" alt="Logo" style="width: 30px; height: 30px; transform: translateY(-8px) rotate(25deg);">
+
+
+        </div>
+    </footer>
+
+    <script src='https://mattdancho.netlify.app/js/rad-animations.js'></script>
+    <script src='https://mattdancho.netlify.app/js/library/lozad.min.js'></script>
+    <script>
+        window.addEventListener("load", function() {
+            var observer = window.lozad(".lozad", {
+                rootMargin: window.innerHeight / 2 + "px 0px",
+                threshold: 0.01
+            });
+            observer.observe();
+        });
+    </script>
+    <script src=''></script>
+    <script src='https://mattdancho.netlify.app/js/library/bootstrap.min.js'></script>
+    <script src='https://mattdancho.netlify.app/js/sticky-header.js'></script>
+    <script src='https://mattdancho.netlify.app/js/library/smooth-scroll.polyfills.min.js'></script>
+    <script src='https://mattdancho.netlify.app/js/library/fontfaceobserver.js'></script>
+    <script>
+        (function(w) {
+
+            if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+                return;
+            }
+            var fontA = new w.FontFaceObserver("Inter", {
+                weight: 300
+            });
+            var fontB = new w.FontFaceObserver("Inter", {
+                weight: 400
+            });
+            var fontC = new w.FontFaceObserver("Inter", {
+                weight: 500
+            });
+            var fontD = new w.FontFaceObserver("Inter", {
+                weight: 600
+            });
+            var fontE = new w.FontFaceObserver("Inter", {
+                weight: 700
+            });
+            var fontF = new w.FontFaceObserver("Inter", {
+                weight: 900
+            });
+            w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+                w.document.documentElement.className += " fonts-loaded";
+            });
+        })(this);
+    </script>
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]');
+        $('a.nav-link').on('click', () => {
+            const navbar = $('.navbar-collapse');
+            if (navbar && navbar.hasClass('show')) {
+                $('.navbar-toggler').click();
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>
